@@ -97,7 +97,7 @@ int xdp_prog1(struct CTXTYPE *ctx) {
     if (h_proto == htons(ETH_P_IP))
         index = parse_ipv4(data, nh_off, data_end);
     else if (h_proto == htons(ETH_P_IPV6))
-       index = parse_ipv6(data, nh_off, data_end);
+        index = parse_ipv6(data, nh_off, data_end);
     else
         index = 0;
 
