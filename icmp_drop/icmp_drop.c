@@ -3,6 +3,7 @@
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 #include <arpa/inet.h>
+#include <bpf/bpf.h>
 
 SEC("prog")  
 BPF_HASH(dropcnt, u32, u32);
